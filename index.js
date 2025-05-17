@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
 
-    console.log("received a post request")
+    console.log("received a post request", req.body)
 })
 
 app.listen(3000, () => {
