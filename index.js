@@ -8,6 +8,11 @@ app.get("/", (req, res) => {
     res.send("Hello there!")
 })
 
+app.post("/", (req, res) => {
+
+    console.log("received a post request")
+})
+
 app.listen(3000, () => {
     console.log("Server is running")
 })
