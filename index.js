@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
 
     console.log("received a post request", req.body.message.text)
+    res.send(req.body)
 })
 
 app.listen(3000, () => {
